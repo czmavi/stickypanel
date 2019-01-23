@@ -1,6 +1,6 @@
 # Sticky side panel component
 
-Sticky side panel, that will float in it's container attempting to be always visible. [Demo](https://czmavi.github.io/stickypanel/)
+Sticky side panel, that will float in it's container attempting to be always visible. See [demo](https://czmavi.github.io/stickypanel/).
 
 ## Instalation
 
@@ -14,19 +14,19 @@ Then put it into your component render method
 
 Minimum required parameters is just `childSelector` which is used to get reference of the child component that should be sticky.
 
-```javascript
+```JSX
 <StickyPanel containerClass="side-1" childSelector=".sticky-panel">
-    <div className="sticky-panel">
-      <p>
-        Sticky side panel
-      </p>
-    </div>
-  </StickyPanel>
+  <div className="sticky-panel">
+    <p>
+      Sticky side panel
+    </p>
+  </div>
+</StickyPanel>
 ```
 
 ## Parameters
 
-| Name | Mandatory | Default | Description |
+| Name | Mandatory | Default value | Description |
 | ---  | --- | --- | --- |
 | childSelector | Yes |  | Is used to get reference of the provided child component that should be sticky |
 | active | No | True | Enable or disable sticky functionality |
